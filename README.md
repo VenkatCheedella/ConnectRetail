@@ -4,8 +4,8 @@
 
 ### Overview
 
-Indian business market model is one of the most complex model. There are levels of distributors (dealers) exist before a product reaches the end customer. Our app is intended to the retail outlets. Retail outlet owners uses the app to know the list of items (products) of each category, to know the latest products available, top products of the week and can order a list of products. RConnect enhances the communication between the dealer and retail outlet owners.
-RConnect, a distributor can enhance the sale through e-advertising, e commerce by replacing the traditional advertising and service management.
+Indian business market model is one of the most complex models. There are levels of distributors (dealers) exist before a product reaches the end customer. Our app is intended to the retail outlets. Retail outlet owners uses the app to know the list of items (products) of each category, to know the latest products available, top products of the week and can order a list of products. ConnectRetail enhances the communication between the dealer and retail outlet owners.
+ConnectRetail, a distributor can enhance the sale through e-advertising, e commerce by replacing the traditional advertising and service management.
 
 
 ### Following features are implemented in the app
