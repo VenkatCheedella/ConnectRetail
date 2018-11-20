@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/itemview"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    android:background="@color/background_material_light"
+    android:paddingBottom="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:id="@+id/c_card_view"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="#FFFFFF"
+        card_view:cardCornerRadius="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/rowview_confectionarie"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="5dp"
+                android:id="@+id/item_img_confectionarie"
+                android:layout_height="80dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/item_name_confectionarie"
+                android:text=""
+                android:textSize="16dp"
+                android:layout_marginRight="50dp"
+                android:fontFamily="Open Sans Light"
+                android:textColor="#ff484848"
+                android:layout_toRightOf="@+id/item_img_confectionarie"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/item_desc_confectionarie"
+                android:textColor="#ff2f2f2f"
+                android:fontFamily="Trebuchet MS"
+                android:typeface="monospace"
+                android:layout_toRightOf="@+id/item_img_confectionarie"
+                android:layout_below="@+id/item_name_confectionarie"
+                android:textSize="12dp"
+                android:text="Description/cost/quantity...etc."
+                android:layout_height="wrap_content" />
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_below="@+id/item_desc"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:background="#E9EBE2"></LinearLayout>-->
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<!--<android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:id="@+id/pager"--><!--tools:context="com.example.rambabu.recyclerview.Activity_ViewPager"--><!-->-->
+
+<!--<android.support.v4.view.PagerTabStrip--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:id="@+id/pager_tab_strip"--><!--android:layout_gravity = "top"-->
+
+<!--android:paddingTop="5dp"--><!--android:paddingBottom="5dp"--><!--android:background="#5C005C"-->
+
+<!--/>-->
+
+
+<!--</android.support.v4.view.ViewPager>-->
+
+
+
+    <LinearLayout
+        android:id="@+id/mainfragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <include
+            android:id="@+id/app_tool_bar"
+            layout="@layout/app_tool_bar"></include>
+
+
+            <com.example.venkat.connectr1.utilities.SlidingTabLayout
+                android:id="@+id/material_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.example.venkat.connectr1.utilities.SlidingTabLayout>
+
+            <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+    </LinearLayout>
+

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">ConnectR</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="Open_Drawer">Open_Drawer</string>
+    <string name="Close_Drawer">Close_Drawer</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Login</string>
+    <string name="concept">App Concept</string>
+    <string name="references">References</string>
+    <string name="aboutus">About Us</string>
+    <string name="logout">Logout</string>
+    <string name="cart">Cart</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="home">home</string>
+    <string name="parse_app_id">YOUR_APPLICATION_ID</string>
+    <string name="parse_client_key">YOUR_CLIENT_KEY</string>
+    <string name="progress_signup">Sing-up in progress</string>
+    <string name="progress_login">Login progress</string>
+    <string name="progress_logout">Logout in Progress</string>
+    <string name="orderhistory">Order History</string>
+    <string-array name="materialtabs">
+        <item>New Arrivals</item>
+        <item>Discounted Products</item>
+        <item>Top Selling</item>
+    </string-array>
+    <string name="title_activity_activity__about_us">AboutUs</string>
+    <string name="title_activity_activity__concept">Concept</string>
+    <string name="title_activity_activity__references">References</string>
+    <string name="share">Share</string>
+</resources>

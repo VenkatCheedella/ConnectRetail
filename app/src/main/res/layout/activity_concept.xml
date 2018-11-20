@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/app_tool_bar"
+        layout="@layout/app_tool_bar"></include>
+
+    <LinearLayout
+        android:id="@+id/concept_container"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/app_tool_bar"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Here we explain the motivation to implement the app"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Indian business market model is one of the most complex model. There are levels of distributors (dealers) exist before a product reaches the end customer. Our app is intended to the retail outlets. Retail outlet owners uses the app to know the list of items (products) of each category, to know the latest products available, top products of the week and can order a list of products. RConnect enhances the communication between the dealer and retail outlet owners." />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="RConnect, a distributor can enhance the sale through e-advertising, e commerce by replacing the traditional advertising and service management."
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</RelativeLayout>

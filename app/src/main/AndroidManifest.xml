@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.venkat.connectr1.activities" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.parse.starter.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.parse.starter.permission.C2D_MESSAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.parse.APPLICATION_ID"
+            android:value="@string/parse_app_id" />
+        <meta-data
+            android:name="com.parse.CLIENT_KEY"
+            android:value="@string/parse_client_key" />
+
+        <activity
+            android:name=".SplashScreen_home"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".Activity_DescriptionDialog"
+            android:label="Description DialogActivity" >
+        </activity>
+        <activity
+            android:name=".Activity_Cart"
+            android:label="Shopping Cart" />
+        <activity
+            android:name=".Activity_OrderHistory"
+            android:label="Order History" />
+        <activity
+            android:name=".Activity_TopSellingProducts_ViewPager"
+            android:label="simpleActivity1" >
+        </activity>
+        <activity
+            android:name=".Activity_DiscountedProducts_TopSellingProducts_NewArrivals_ViewPager"
+            android:label="Product Categories" >
+        </activity>
+        <activity
+            android:name=".Activity_Detail_DiscountedProducts_TopSellingProducts_NewArrivals_ViewPager"
+            android:label="Product Details" >
+        </activity>
+        <activity
+            android:name=".Activity_Youtube"
+            android:label="New Product Video" >
+        </activity>
+        <activity
+            android:name=".Activity_Login"
+            android:label="Login" >
+        </activity>
+        <activity
+            android:name=".Activity_Signup"
+            android:label="Signup" >
+        </activity>
+
+        <receiver android:name="com.parse.ParseBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.ParsePushBroadcastReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.parse.push.intent.RECEIVE" />
+                <action android:name="com.parse.push.intent.DELETE" />
+                <action android:name="com.parse.push.intent.OPEN" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <!-- IMPORTANT: Change "com.parse.starter" to match your app's package name. -->
+                <category android:name="com.example.venkat.connectr1" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Activity_AboutUs"
+            android:label="@string/title_activity_activity__about_us" >
+        </activity>
+        <activity
+            android:name=".Activity_Concept"
+            android:label="@string/title_activity_activity__concept" >
+        </activity>
+        <activity
+            android:name=".Activity_References"
+            android:label="@string/title_activity_activity__references" >
+        </activity>
+    </application>
+
+</manifest>

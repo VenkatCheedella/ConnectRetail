@@ -1,0 +1,60 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01_detail_electronics"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:color="#FFFFCC"
+
+        >
+
+        <!--android:background="@drawable/background"-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+
+
+        <!--</LinearLayout>-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+
+
+            <TextView
+                android:id="@+id/Title_detail_electronics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3.5dp"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:typeface="monospace" />
+
+
+            <!--Image-->
+
+            <ImageView
+                android:id="@+id/image_detail_electronics"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_below="@+id/Title_detail_electronics"
+                android:layout_margin="30dp"
+                android:padding="5dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/nav_banner" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

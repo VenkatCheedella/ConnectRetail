@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cart_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/app_tool_bar"
+        layout="@layout/app_tool_bar"></include>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_margin="10dp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:text="Order Details: " />
+
+    <ListView
+        android:id="@+id/cart_listview"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:divider="@color/background_material_light"
+        android:dividerHeight="5.0sp"
+        android:layout_weight="4"></ListView>
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/confirm_btn"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_weight="0.5"
+        android:layout_marginBottom="5dp"
+        android:padding="2dp"
+        android:text="Confirm Order"
+        android:textAllCaps="false"/>
+</LinearLayout>

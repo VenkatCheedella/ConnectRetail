@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/app_tool_bar"
+        layout="@layout/app_tool_bar"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="24dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_ram"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <TextView
+            android:id="@+id/name_ram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img_ram"
+            android:text="RamBabu Nethi" />
+
+        <TextView
+            android:id="@+id/suid_ram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_ram"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img_ram"
+            android:text="SUID 314651093" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/suid_ram"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img_ram"
+            android:text="CSE 691" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="24dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/venkatimg"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/linkedin" />
+
+        <TextView
+            android:id="@+id/venkatname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/venkatimg"
+            android:text="Venkata Subba Rao Cheedella" />
+
+        <TextView
+            android:id="@+id/suid_venk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/venkatname"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/venkatimg"
+            android:text="SUID 418320700" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/suid_venk"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/venkatimg"
+            android:text="CIS 600" />
+    </RelativeLayout>
+
+</LinearLayout>

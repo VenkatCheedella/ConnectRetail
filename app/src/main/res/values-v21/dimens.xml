@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="marrgin_top">48dp</dimen>
+    <dimen name="tool_bar_top_padding">24dp</dimen>
+    <dimen name="nav_margin_top">48dp</dimen>
+</resources>
